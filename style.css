@@ -1,5 +1,8 @@
 body {
   font-family: arial, sans-serif;
+  margin: 80px auto;
+  background-color: #e8f6ef;
+  text-shadow: #fc0 1px 0 05px;
 }
 
 h1 {
@@ -28,11 +31,14 @@ li::first-letter {
 }
 
 .weather-app {
-  border: 1px solid #dadde1;
+  background-color: #e7eab5;
+  border: 5px solid #b8dfd8;
   padding: 15px;
-  margin: 20px auto;
-  border-radius: 10px;
-  max-width: 600px;
+  margin: 15px auto;
+  border-radius: 50% 20% / 10% 15%;
+  max-width: 700px;
+  max-height: 100%;
+  box-shadow: 3px 3px rgb(40, 85, 4), -2em 0 1em olive;
 }
 
 .weather-icon {
