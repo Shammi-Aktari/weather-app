@@ -97,7 +97,7 @@ li::first-letter {
   color: brown;
 }
 
-.weather-forecast-temperature-mini {
+.weather-forecast-temperature-min {
   color: #70757a;
   opacity: 0.6;
 }
