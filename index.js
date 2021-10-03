@@ -22,6 +22,41 @@ function formatDate(date) {
   
     return `${day} ${hours}:${minutes}`;
   }
+
+function displayForecast(){
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun","Mon","Tue","Wed","Thu","Fri"];
+  days.forEach(function(day){
+    forecastHTML = forecastHTML +
+  `
+  <div class="col-2">
+    <div class="weather-forecast-date">
+    ${day}
+  </div>
+    <div class="weather-forecast-image">
+    <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="" width="60">
+  </div>
+  <span class="weather-forecast-temperature-max">
+    18° 
+  </span>
+  <span class="weather-forecast-temperature-mini">
+   20°
+  </span>
+    
+  </div>
+`;
+
+  })
+
+  
+
+forecastHTML = forecastHTML+ `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  
+}
+
+
   
   function showPosition(response) {
     console.log(response.data);
@@ -113,4 +148,5 @@ let celsiusTemperature = null;
   celsius.addEventListener("click", getCelsiusTemperature);
   
   search("Lisbon");
+  displayForecast();
   
