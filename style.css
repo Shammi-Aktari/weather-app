@@ -30,6 +30,9 @@ li::first-letter {
   text-transform: capitalize;
 }
 
+.list {
+  float: left;
+}
 .weather-app {
   border: 5px solid #b8dfd8;
   padding: 15px;
@@ -67,6 +70,7 @@ li::first-letter {
 
 .link {
   text-align: center;
+  margin-top: 50px;
 }
 
 .active {
