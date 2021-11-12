@@ -98,3 +98,20 @@ li::first-letter {
   color: #70757a;
   opacity: 0.6;
 }
+
+@media (max-width: 900px) {
+  .weather-forecast {
+    padding: 0;
+  }
+  .weather-forecast-date {
+    font-size: 15px;
+  }
+
+  .weather-forecast-image img {
+    width: 40px;
+  }
+
+  .temperature {
+    font-size: 80px;
+  }
+}

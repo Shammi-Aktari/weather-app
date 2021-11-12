@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <title>Weather App</title>
@@ -21,7 +22,7 @@
       <div class="weather-app">
         <form class="search-form" id="search-form">
           <div class="row">
-            <div class="col-6">
+            <div class="col d-md-block">
               <div class="search">
               <input
                 type="search"
@@ -33,7 +34,7 @@
               />
             </div>
           </div>
-            <div class="col-3">
+            <div class="col d-md-block">
               <input
                 type="submit"
                 value="Search"
@@ -41,7 +42,7 @@
               />
             </div>
           
-            <div class="col-3">
+            <div class="col-3 d-none d-md-block">
               <input
                 id="current-location"
                 type="submit"
@@ -74,7 +75,7 @@
                   <a href="#" id="celsius-link" class="active">°C</a>
                 </span>
                 <span class="units">
-                  <a href="#" id="fahrenheit-link">|°F</a>
+                  <a href="#" id="fahrenheit-link" class="d-none d-md-block">|°F</a>
                 </span>
               </div>
             </div>
@@ -82,7 +83,7 @@
           <div class="col-6">
             
             <ul>
-              <li>
+              <li class="d-none d-md-block">
                 Precipitation: 0%
               </li>
               <li>Humidity:<span id="humidity">0</span>%</li>
