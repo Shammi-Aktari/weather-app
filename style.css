@@ -114,4 +114,9 @@ li::first-letter {
   .temperature {
     font-size: 80px;
   }
+
+  .search {
+    font-size: 10px;
+    opacity: 0.8;
+  }
 }
